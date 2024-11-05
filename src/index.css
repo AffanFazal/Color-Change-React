@@ -1,0 +1,186 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none; /* No underline */
+  transition: color 0.2s; /* Smooth color transition */
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Allow for vertical stacking */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center horizontally */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #242424;
+  position: relative; /* Relative positioning for absolute child elements */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #ffffff; /* Ensure the heading is visible in dark mode */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center; /* Center the heading */
+}
+
+/* Container for buttons */
+.button-container {
+  position: absolute; /* Position buttons absolutely within body */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space buttons to left and right */
+  padding: 20px; /* Padding around buttons */
+}
+
+/* Base button styles */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #ffffff; /* Default text color */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Button 1 - Default Style */
+.button-default {
+  background-color: #1a1a1a; /* Button background color */
+}
+
+.button-default:hover {
+  background-color: #333333; /* Darker background on hover */
+  border-color: #646cff; /* Highlight border on hover */
+}
+
+/* Button 2 - Primary Style */
+.button-primary {
+  background-color: #646cff; /* Primary background color */
+  color: #ffffff; /* Text color for primary button */
+}
+
+.button-primary:hover {
+  background-color: #535bf2; /* Darker shade on hover */
+}
+
+/* Focus states for accessibility */
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* Focus ring for accessibility */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+      color: #213547; /* Dark text for light mode */
+      background-color: #ffffff; /* Light background */
+  }
+
+  a:hover {
+      color: #747bff; /* Lighter hover color for links */
+  }
+
+  button {
+      color: #000000; /* Dark text for buttons */
+  }
+
+  /* Light mode styles for buttons */
+  .button-default {
+      background-color: #f9f9f9; /* Light background for default button */
+  }
+
+  .button-default:hover {
+      background-color: #e0e0e0; /* Light gray hover effect */
+  }
+}
+
